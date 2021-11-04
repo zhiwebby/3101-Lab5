@@ -27,8 +27,8 @@ namespace UnitTest.Selenium_Tests
         {
             ChromeOptions option = new ChromeOptions();
             option.AddArgument("--headless");
-            _driver = new ChromeDriver(@"D:\chromedriver_win32", option);
-
+            //_driver = new ChromeDriver(@"D:\chromedriver_win32", option);
+            _driver = new ChromeDriver(option);
         }
 
         // The WebDriver instance is looking out for the WebElement even before the element is present/visibile within the HTML DOM.

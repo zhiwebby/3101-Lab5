@@ -26,8 +26,8 @@ namespace UnitTest.Selenium_Tests
         {
             FirefoxOptions option = new FirefoxOptions();
             option.AddArgument("--headless");
-            _driver = new FirefoxDriver(@"D:\geckodriver-v0.30.0-win64", option);
-
+            //_driver = new FirefoxDriver(@"D:\geckodriver-v0.30.0-win64", option);
+            _driver = new FirefoxDriver(option);
         }
         // The WebDriver instance is looking out for the WebElement even before the element is present/visibile within the HTML DOM.
         [Test]
