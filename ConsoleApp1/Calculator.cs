@@ -234,13 +234,8 @@ namespace ConsoleApp1
             double result = 0;
             int choice = Convert.ToInt16(input);
 
-            // Lab 4 Q1
-            //Dependency------------------------------
-            //FileReader getTheMagic = new FileReader();
-            //----------------------------------------
-            //string[] magicStrings = getTheMagic.Read(@"Your file name");
-
-            string[] magicStrings = fileReader.Read(@"D:\final_3101_lab4\ConsoleApp1\ConsoleApp1\MagicNumbers.txt");
+            // Lab 4 Q8
+            string[] magicStrings = fileReader.Read(@"MagicNumbers.txt");
             if ((choice >= 0) && (choice < magicStrings.Length))
             {
                 result = Convert.ToDouble(magicStrings[choice]);
