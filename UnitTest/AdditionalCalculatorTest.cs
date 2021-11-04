@@ -18,7 +18,7 @@ namespace UnitTest
         {
             _mockFileReader = new Mock<IFileReader>();
             _mockFileReader.Setup(fr =>
-            fr.Read(@"D:\final_3101_lab4\ConsoleApp1\ConsoleApp1\MagicNumbers.txt")).Returns(new string[9] { "-11", "17", "9", "4", "-8", "-2", "3", "5", "0" });
+            fr.Read(@"MagicNumbers.txt")).Returns(new string[9] { "-11", "17", "9", "4", "-8", "-2", "3", "5", "0" });
             _calculator = new Calculator();
         }
 
